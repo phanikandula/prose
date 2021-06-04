@@ -1,0 +1,39 @@
+= Prose
+
+
+Opinionated static site generator using asciidoc format 'books'.
+
+== Sample
+
+See prose-sample repo on how to set up a website with two books and index page.
+
+== Themes
+
+Thanks to themes provided in https://github.com/darshandsoni/asciidoctor-skins project.
+
+To use different theme: set `THEME_NAME` in prose.settings file
+
+List of all themes is in static/assets/css folder.
+
+== Output options
+
+Tool can build both prod and dev versions of website. 
+Difference is the url used and the folder into which the output is generated.
+
+=== Prod
+
+Prod version is good for direct deployment to any static site hosting service.
+
+User can choose where to commit the generated files in output/prod: 
+
+1. into same git repo and branch.. or
+2. into same git repo but different branch.. or
+3. into different git repo
+
+
+=== Dev
+
+Dev version can be used locally with any http server. 
+
+Example of command with python: `python3 -m http.server --directory output/dev`
+
