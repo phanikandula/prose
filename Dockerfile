@@ -1,6 +1,6 @@
 FROM alpine:3.13
 
-RUN apk add ruby=2.7.2-r3
+RUN apk add ruby=2.7.3-r0
 
 ARG USER=devuser
 ENV HOME /home/$USER
@@ -11,7 +11,7 @@ RUN adduser $USER $USER -g '' -D -u 1000
 RUN mkdir /site && chown $USER:$USER -R /site
 USER $USER
 
-RUN gem install --user-install asciidoctor-multipage
+RUN gem install --user-install asciidoctor-multipage -v 0.0.9
 # Update PATH so that gem executables we installed can be run.
 ENV PATH /home/devuser/.gem/ruby/2.7.0/bin:$PATH
 
