@@ -5,7 +5,7 @@ Opinionated static site generator using asciidoc format 'books'.
 
 == Sample
 
-See prose-sample repo on how to set up a website with two books and index page.
+See https://github.com/phanikandula/prose-sample[prose-sample] repo on how to set up a website with two books and index page.
 
 == Themes
 
